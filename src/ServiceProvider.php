@@ -38,9 +38,10 @@ class ServiceProvider extends LaravelServiceProvider
             $app = new GeoSearch(config('easy_lbs.server_ak'),config('easy_lbs.server_sk'));
             return $app;
         });
+        $this->app->singleton(['HivenKay\\LaravelLbs\\EasyLbs'=>'Lbs']);
     }
     public function provides()
     {
-        return ['GeoTable','GeoColumn','GeoPoi','GeoSearch'];
+        return ['Lbs','GeoTable','GeoColumn','GeoPoi','GeoSearch'];
     }
 }

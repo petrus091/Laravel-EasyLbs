@@ -11,7 +11,7 @@ class Facade extends LaravelFacade
 {
     static public function getFacadeAccessor()
     {
-        return 'EasyLbs';
+        return 'Lbs';
     }
 
 }
