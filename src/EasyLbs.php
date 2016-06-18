@@ -1,5 +1,6 @@
 <?php
 namespace HivenKay\LaravelLbs;
+
 /**
  * Created by PhpStorm.
  * User: HivenKay
